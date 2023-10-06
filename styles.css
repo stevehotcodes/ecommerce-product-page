@@ -23,6 +23,7 @@ body{
     background-color:var(--Grayish-blue);
     display:flex;
     justify-content:center;
+    flex-direction: column;
     align-items:center;
     height: 100vh;
 
@@ -33,7 +34,7 @@ body{
     width:80vw;
   
      background-color: white;
-    height:82vh;
+    height:90vh;
     padding:1rem;
     
     
@@ -96,7 +97,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap:.3rem;
+    
     
 
 }
@@ -104,12 +106,12 @@ a:hover{
     border-radius:1rem;
 }
 .thumbnails-images{
-    width:70%;
+    width:375px;
     height:15%;
     display:flex;
     justify-content: center;
     align-items:space-evenly;
-    gap:.5rem;
+    gap:.9rem;
     /* border: 2px solid red; */
     padding:.3rem;
     
@@ -119,44 +121,91 @@ a:hover{
 }
 
 .product-description-wrapper{
-    flex:.49;
+    flex:.4;
     /* border:2px solid green; */
     display: flex;
     flex-direction: column;
-    padding:.7rem;
+    /* padding:.7rem; */
     justify-content: stretch;
     
 }
+.product-display-div{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:375px;
+    height:70%;
+    margin:4rem auto;
+    /* padding:rem; */
+    font-size:1rem;
+    /* color:var(--Dark-grayish-blue); */
+    
+}
+
 
 .company-name{
     color:var(--Orange);
     font-size:18px;
+    padding:1rem;
 }
 
 .product-name{
     font-weight:700;
     font-size:2rem;
+    color:var(--Dark-grayish-blue);
+    padding:1rem;
+    
 }
 
 .product-summary{
-    font-size:16px;
+    font-size:13px;
     color:var(--Black)
 }
+
 .price-offer{
     display: flex;
     width:7rem;
-    margin:.5rem;
+    /* margin:.5rem; */
     justify-content: center;
     align-items: center;
+    padding:1rem;
+}
+.counter-cart-icon-wrapper{
+    display:flex;
+    gap:.5rem;
+
+}
+
+.counter{
+    display:flex;
+    justify-content: space-around;
+    background-color: var(--Light-grayish-blue);
+    align-items: center;
+    flex:.3;
+    
+    
 }
 
 #cart-icon{
     background-color:var(--Orange);
     width:300px;
-    height:2rem;
-    padding:.5rem;
+    /* height:2rem; */
+    padding:1rem;
     text-align:center;
     color:white;
     border-radius:.5rem;
+    display:flex;
+    justify-content:center;
+    flex:.65;
+    align-items: space-around;
+    gap:.5rem;
 }
 
+@media screen and (max-width:1287) {
+    .header{
+        flex-grow:1;
+        flex-wrap:wrap;
+    }
+    
+}
